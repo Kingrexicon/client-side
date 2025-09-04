@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Vast+Shadow&display=swap');
+* {
+	/* display: flex; /* Use flexbox for centering content (optional) */
+	/* justify-content: center; Center content horizontally */
+	/* align-items: center; Center content vertically */
+	/* width: 100%; */
+	/* height: 100%; */
+    /* border: 1px solid black; */
+	background:linear-gradient();
+	/* color: rgb(8, 8, 8); */
+	font-family: "Vast Shadow", serif;
+  font-weight: 400;
+  font-style: normal;
+	text-align: center; 
+}
+body {
+	margin: 0; /* Remove default body margin */
+	padding: 0; /* Remove default body padding */
+	width: 100%; /* Ensure html and body take full width */
+	height: 100%; /* Ensure html and body take full height */
+	overflow: hidden; /* Prevent scrollbars if content exceeds viewport */
+}
+header {
+
+  font-family: "Vast Shadow", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  background-color: rgb(230, 183, 57);
+  	animation: color 10s infinite ease-in-out;
+  
+
+
+}
+
+@keyframes color {
+	0%{
+background-color:  rgb(230, 183, 57);
+color: black;
+fill: black;
+	}
+	15%{
+background-color: rgb(126, 33, 33);	}
+	30%{
+background-color : rgb(52, 35, 128);
+	}
+	45%{
+background-color : rgb(134, 133, 45);
+	}
+	60%{
+background-color: rgb(230, 183, 57);
+	}
+	75%{
+background-color: rgb(230, 183, 57);
+color: black;
+fill: black;
+
+	}
+	90%{
+background-color: black;
+color: rgba(141, 114, 24, 0.795);
+fill :rgba(141, 114, 24, 0.795);
+
+}
+100%{
+	background-color: white;
+	border: 1px solid rgba(141, 114, 24, 0.534);
+fill: black;
+color: black;
+	}
+	
+}
+.sup_container{
+    /* border: rgba(255, 0, 0, 0.438) 1px solid; */
+	box-shadow: 0 3px 1px black;
+    height: 100vh
+}
+svg{
+	fill: black;
+	animation: color 10s infinite ease-in-out;
+	border: none;
+	
+}
+svg{
+		border: none;
+}
+
+.container{
+width: 100%;
+height: 50vh;
+background-color: rgb(224, 141, 32);
+display: flex;
+color: white;
+border: 1px solid black;
+
+animation: color 10s infinite ease-in-out;
+
+
+}
+.sub_container{
+	border: 1px solid black;
+    width: 50%
+}
+.input{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	animation: color 10s infinite ease-in-out;
+
+}
+input {
+	margin-block:10px ;
+	width: fit-content;
+	border: none;
+	color: white;
+	background-color: transparent;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.404);
+	animation: color 10s infinite ease-in-out;
+
+
+}
+input:focus{
+	border: none;
+	outline: none;
+	box-shadow: none;
+	border-bottom: 1px rgba(0, 0, 0, 0.267) solid;
+
+}
+
+button{
+background-color: transparent;
+border: none;
+}
+
+button:focus{
+
+	transform: translateX(100px) translateY(130px);
+	transition: ease-in-out;
+
+}
+
+
+.dataBox{
+	/* background-color: transparent; */
+
+	display:flex ;
+	justify-content: center;
+	align-items: center;
+}
+.data {
+	font-size: small;
+	background-color: transparent;
+}
+.data p{
+	background-color: transparent;
+}
+
+#image {
+	padding: 10px;
+	background-image: url(/Olamide\ \(1\).webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@media screen and (max-width:600pxw){
+	.container{
+		flex-direction: column;
+	}
+	.sub_container{
+		width: 100%;
+		height: 100vh;
+	}
+
+	button:focus{
+
+	transform: translateX(110px) translateY(65px);
+	transition: ease-in-out;
+
+}
+}

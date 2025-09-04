@@ -2,7 +2,8 @@ document.querySelector("button").addEventListener("click", apiRequest);
 
 async function apiRequest() {
 	const rapperName = document.querySelector("input").value;
-	const bodyElement = document.body;
+	const bodyElement = document.querySelector("#image");
+
 	try {
 		const response = await fetch(
 			`https://my-first-crud.onrender.com/api/${rapperName}`
@@ -11,7 +12,7 @@ async function apiRequest() {
 
 		console.log(data);
 		bodyElement.style.backgroundImage = `url('${data.imageUrl}')`;
-		bodyElement.style.backgroundSize = "cover";
+		bodyElement.style.backgroundSize = "contain";
 		bodyElement.style.backgroundRepeat = "no-repeat";
 		bodyElement.style.backgroundPosition = "0 center";
 		// document.querySelector("img").src = data.imageUrl;
