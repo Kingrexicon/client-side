@@ -6,6 +6,11 @@ This is a simple web application that demonstrates how to consume an API on a bu
 
 - User enters a rapper's name in the input field.
 - On button click, the app fetches data from a public API and displays the rapper's birth name.
+- 
+<img width="1366" height="768" alt="Screenshot (80)" src="https://github.com/user-attachments/assets/e88b1c54-7b01-4042-a734-67e4fdfcd261" />
+
+
+![Screenshot_2025-09-04-07-51-30-951_com android chrome](https://github.com/user-attachments/assets/d17f3c7c-d94e-4c36-bbeb-83d7675ffde9)
 
 ## Project Structure
 
